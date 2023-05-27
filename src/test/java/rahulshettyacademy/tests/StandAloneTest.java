@@ -56,10 +56,11 @@ public class StandAloneTest {
 	
 	driver.findElement(By.xpath("(//button[contains(@class,'ta-item')])[2]")).click();
 	driver.findElement(By.cssSelector(".action__submit")).click();
-	
+	//I am testing this line for git hub.
 	String confirmMessage = driver.findElement(By.cssSelector(".hero-primary")).getText();
 	Assert.assertTrue(confirmMessage.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 	driver.close();
+
 	
 	
 
